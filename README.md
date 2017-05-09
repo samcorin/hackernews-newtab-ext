@@ -1,8 +1,7 @@
 # Hacker News Chrome Extension
 
-A [React](http://facebook.github.io/react) implementation of
-[Hacker News](https://news.ycombinator.com) using its
-[Firebase API](https://github.com/HackerNews/API).
+A Google Chrome extension for reading [Hacker News](https://news.ycombinator.com) in new tabs. 
+Powered by [React](http://facebook.github.io/react).
 
 ![Screenshot](https://github.com/samcorin/hackernews-newtab-ext/blob/master/raw/master/screenshot.png)
 
@@ -25,6 +24,6 @@ npm install
 
 ### gulp scripts
 
-* `gulp watch` - build into the `build/` directory
+* `gulp watch` - watch for changes and build into the `build/` directory
 
 ## MIT Licensed
