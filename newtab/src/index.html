@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Newtab example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
+      body {
+        font-family: 'Source Sans Pro', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        font-size: 100%;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      /* CENTER CONTENT */
+      .main {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: column;
+        height: 100vh;
+      }
+
+      .main-content {
+        /*text-align: center;*/
+        height: 100%;
+        width: 700px;
+        padding: 20px;
+      }
+
+      .item, li {
+        /*list-style-type: none;*/
+        list-style-type: decimal;
+        margin-bottom: 10px;
+      }
+
+      .details-line {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 7pt;
+        color: #828282;
+      }
+
+      a:link {
+        color: #000000;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #828282;
+        text-decoration: none;
+      }
+
+      /* RESULTS TABLE */
+      #results {
+        margin-top: 20px;
+        width: 100%;
+      }
+
+      .comm-url {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 8pt;
+        color: #828282;
+      }
+    </style>
+</head>
+<body>
+  <div class="main">
+    <div class="main-content">
+      <h1>Hacker News</h1>
+      <div id="app"></div>
+    </div>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
