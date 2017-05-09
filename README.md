@@ -4,7 +4,7 @@ A [React](http://facebook.github.io/react) implementation of
 [Hacker News](https://news.ycombinator.com) using its
 [Firebase API](https://github.com/HackerNews/API).
 
-![react-hn screenshot](https://github.com/samcorin/hackernews-newtab-ext/tree/master/raw/master/screenshot.png "First version")
+![Screenshot](https://github.com/samcorin/hackernews-newtab-ext/tree/master/raw/master/screenshot.png)
 
 ## Features
 
