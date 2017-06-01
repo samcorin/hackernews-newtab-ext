@@ -3,7 +3,7 @@
 A Google Chrome extension for reading [Hacker News](https://news.ycombinator.com) in new tabs.
 Powered by [React](http://facebook.github.io/react).
 
-![Screenshot](https://github.com/samcorin/hackernews-newtab-ext/assets/images/screenshot.png)
+![Screenshot](https://github.com/samcorin/hackernews-newtab-ext/blob/master/assets/images/screenshot.png)
 
 ## Features
 
