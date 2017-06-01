@@ -55,7 +55,7 @@ class App extends Component {
           return (
             <li key={index} className="item">
               <div className="title-line">
-                <a href={item.url}>{item.data.title}</a> <span className="comm-url"> (somewhere.com) </span>
+                <a href={item.data.url} target="_blank">{item.data.title}</a> <span className="comm-url"> (somewhere.com) </span>
               </div>
               <div className="details-line">
                 <span className="score">{item.data.score} points</span> by <span className="username"> {item.data.by} </span>
@@ -67,14 +67,15 @@ class App extends Component {
         });
 
         return (
-          <ul>{stories}</ul>
+          <div className="flexbox">
+            <ul className="el">{stories}</ul>
+            <div className="el">hello hello</div>
+          </div>
         );
       // )
     } else {
       return (
-        <div>
-          <h1>popup</h1>
-        </div>
+        <div>error</div>
       )
     }
   }
