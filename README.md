@@ -1,13 +1,13 @@
 # Hacker News Chrome Extension
 
-A Google Chrome extension for reading [Hacker News](https://news.ycombinator.com) in new tabs. 
+A Google Chrome extension for reading [Hacker News](https://news.ycombinator.com) in new tabs.
 Powered by [React](http://facebook.github.io/react).
 
-![Screenshot](https://github.com/samcorin/hackernews-newtab-ext/blob/master/raw/master/screenshot.png)
+![Screenshot](https://github.com/samcorin/hackernews-newtab-ext/assets/images/screenshot.png)
 
 ## Features
 
-* TBA
+* Top 10 Hackernews Stories
 
 
 [Feature requests are welcome!](https://github.com/samcorin/hackernews-newtab-ext/issues/new)
@@ -24,6 +24,7 @@ npm install
 
 ### gulp scripts
 
-* `gulp watch` - watch for changes and build into the `build/` directory
+* `gulp` - creates a production ready extension in the`build/` directory.
+* `gulp watch` - watch for changes.
 
 ## MIT Licensed
