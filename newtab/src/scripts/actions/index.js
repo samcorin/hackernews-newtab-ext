@@ -13,12 +13,8 @@ export var addDataFetch = (data) => {
   }
 };
 
-
 export var fetchData = (name) => {
   return (dispatch, getState) => {
-    // dispatch(startDataFetch());
-    // var array = [];
-
     axios.get('https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty')
       .then(res => {
         var done = res.data.slice(0,10);
@@ -27,7 +23,6 @@ export var fetchData = (name) => {
         for (var i = 0; i < 10; i++) {
           axios.get(`https://hacker-news.firebaseio.com/v0/item/${done[i]}.json?print=pretty`)
           .then(res => {
-            console.log(res)
             dispatch(addDataFetch(res.data));
           })
         }

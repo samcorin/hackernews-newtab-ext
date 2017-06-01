@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-// import moment from 'moment';
+import moment from 'moment';
 
 class App extends Component {
   render() {
@@ -13,8 +13,8 @@ class App extends Component {
             </div>
             <div className="details-line">
               <span className="score">{item.data.score} points</span> by <span className="username"> {item.data.by} </span>
-              <span className="age"></span> |
-              <span className="comments"> {item.descendants} comments</span>
+              <span className="age">{moment.unix(item.data.time).fromNow()}</span> |
+              <a href={`https://news.ycombinator.com/item?id=${item.data.id}`}> <span className="comments"> {item.data.descendants} comments</span></a>
             </div>
           </li>
         )
@@ -29,7 +29,7 @@ class App extends Component {
     } else {
 
       return (
-        <div>There was an error :/</div>
+        <div>There was an error...</div>
       )
     }
   }
