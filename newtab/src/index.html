@@ -31,6 +31,10 @@
       height: 100vh;
     }
 
+    .header {
+      text-align: center;
+    }
+
     .main-content {
       height: 100%;
       width: 90%;
@@ -64,17 +68,21 @@
       width: 100%;
     }
 
-    .comm-url {
+    .comm-url, .comm-url a {
       font-family: Verdana, Geneva, sans-serif;
       font-size: 8pt;
       color: #828282;
     }
+    .comm-url a:hover {
+      text-decoration: underline;
+    }
     .flexbox {
       display: flex;
       flex-direction: row;
+      justify-content: space-around;
     }
     .el {
-      width: 40%;
+      width: 60%;
     }
     .comments {
       color: #828282;
@@ -87,7 +95,7 @@
 <body>
   <div class="main">
     <div class="main-content">
-      <h1>Hacker News</h1>
+      <h1 class="header">Hacker News</h1>
       <div id="app"></div>
     </div>
   </div>

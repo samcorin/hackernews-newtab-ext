@@ -3,13 +3,20 @@ import {connect} from 'react-redux';
 import moment from 'moment';
 
 class App extends Component {
+
+  urlParser(url) {
+    var regex = /^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/;
+    return url.match(regex)[1]
+  }
+
   render() {
     if (this.props.data) {
       var stories = this.props.data.map((item, index) => {
+        var url = this.urlParser(item.data.url);
         return (
           <li key={index} className="item">
             <div className="title-line">
-              <a href={item.data.url} target="_blank">{item.data.title}</a> <span className="comm-url"> (somewhere.com) </span>
+              <a href={item.data.url} target="_blank">{item.data.title}</a> <span className="comm-url"> (<a href={`http://${url}`}>{url}</a>) </span>
             </div>
             <div className="details-line">
               <span className="score">{item.data.score} points</span> by <span className="username"> {item.data.by} </span>

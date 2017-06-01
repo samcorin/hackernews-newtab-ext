@@ -23,6 +23,7 @@ export var fetchData = (name) => {
         for (var i = 0; i < 10; i++) {
           axios.get(`https://hacker-news.firebaseio.com/v0/item/${done[i]}.json?print=pretty`)
           .then(res => {
+            console.log(res)
             dispatch(addDataFetch(res.data));
           })
         }
